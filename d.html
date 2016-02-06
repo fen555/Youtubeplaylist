@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  <link rel="stylesheet" href="css.css">
+  <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="ng.js"></script>
+</head>
+<body ng-controller="TodoListController as app">
+{{app.test}}
+
+<div id="info">
+  <p id="info_start"></p>
+  <p id="info_speak_now"></p>
+  <p id="info_no_speech">
+  <p id="info_no_microphone" style="display:none">
+  <p id="info_allow"></p>
+  <p id="info_denied"></p>
+  <p id="info_blocked"></p>
+  <p id="info_upgrade"></p>
+</div>
+<div class="right">
+  <button id="start_button" onclick="startButton(event)">
+    <img id="start_img" src="img/mic.gif" alt="Start"></button>
+</div>
+<div id="results">
+  <span id="final_span"  class="final"></span>
+  <span id="interim_span" class="interim"></span>
+
+  <p>
+</div>
+<div class="center">
+  <div class="sidebyside" style="text-align:right">
+
+
+    </div>
+  </div>
+  <div class="sidebyside">
+
+    <div id="email_info" class="info">
+      Text sent to default email application.<br>
+      (See chrome://settings/handlers to change.)
+    </div>
+  </div>
+  <p>
+  <div id="div_language">
+    <select id="select_language" onchange="updateCountry()"></select>
+    &nbsp;&nbsp;
+    <select id="select_dialect"></select>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
